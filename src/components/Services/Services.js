@@ -3,45 +3,56 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="container">
+    <div className="container" id="services">
+      <h2 className="mt-5 mb-3 text-center">Start With What Suits You</h2>
       <div className="row">
-        <h2 className="mt-5 mb-3 text-center">My Services</h2>
-        <div class="col-md-4 card">
-          <img src="./images/2.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">FAT BURNING PRO</h5>
-            <p class="card-text">
-              Get started to burn yor fat. Get a slim and healthy body.
+        <div className="col-md-4 card">
+          <img src="./images/2.jpg" className="card-img-top" alt="..." />
+          <div className="card-body">
+            <h5 className="card-title">FAT BURNING PRO</h5>
+            <p className="card-text">
+              Get started to burn your fat. Get a slim and healthy body.
+            </p>
+            <p className="card-text">
+              <strong>Price: $50/month</strong>
             </p>
 
-            <Link to="/checkout" class="btn btn-primary">
+            <Link to="/checkout" className="btn btn-primary">
               Get Started
             </Link>
           </div>
         </div>
-        <div class="col-md-4 card">
-          <img src="./images/3.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">WOMEN STRENGTH TRAINING</h5>
-            <p class="card-text">
+        <div className="col-md-4 card">
+          <img src="./images/3.jpg" className="card-img-top" alt="..." />
+          <div className="card-body">
+            <h5 className="card-title">WOMEN STRENGTH TRAINING</h5>
+            <p className="card-text">
               Design for women strength building. Get started to acheive the
               ultimate result.
             </p>
 
-            <Link to="/checkout" class="btn btn-primary">
+            <p className="card-text">
+              <strong>Price: $80/month</strong>
+            </p>
+
+            <Link to="/checkout" className="btn btn-primary">
               Get Started
             </Link>
           </div>
         </div>
-        <div class="col-md-4 card">
-          <img src="./images/1.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">MUSCLE BUILD PRO</h5>
-            <p class="card-text">
+        <div className="col-md-4 card">
+          <img src="./images/1.jpg" className="card-img-top" alt="..." />
+          <div className="card-body">
+            <h5 className="card-title">MUSCLE BUILD PRO</h5>
+            <p className="card-text">
               Get Bigger and Strong Muscle. This course is designed for Men.
             </p>
 
-            <Link to="/checkout" class="btn btn-primary">
+            <p className="card-text">
+              <strong>Price: $90/month</strong>
+            </p>
+
+            <Link to="/checkout" className="btn btn-primary">
               Get Started
             </Link>
           </div>

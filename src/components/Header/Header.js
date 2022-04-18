@@ -25,6 +25,9 @@ const Header = () => {
               <Link to="/about" className="px-3">
                 About Me
               </Link>
+              <Link to="/login" className="px-3">
+                Login
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

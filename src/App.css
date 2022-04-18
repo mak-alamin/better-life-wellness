@@ -1,6 +1,14 @@
 .banner {
   min-height: 90vh;
 }
+.banner h1,
+.banner p {
+  text-shadow: 0px 5px 10px #000;
+}
+.login-form {
+  width: 100%;
+  max-width: 420px;
+}
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
