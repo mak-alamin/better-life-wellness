@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live Site: [View Live Site](https://superb-kelpie-0185ba.netlify.app).
+
+## Project Description
+
+- [x] This is a Personal service provider website created with ReactJS.
+- [x] There are Header Navigations.
+- [x] There is a Checkotu page for the Cars and 3 Home page services.
+- [x] There is a Blog and about page.
+- [x] Answered some assignment questions on the Blog Page.
+- [x] There is also an about page.
+
 ## Available Scripts
 
 In the project directory, you can run:
