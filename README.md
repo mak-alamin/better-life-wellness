@@ -1,16 +1,16 @@
-# Getting Started with Create React App
+# Better Life Wellness
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live Site: [View Live Site](https://superb-kelpie-0185ba.netlify.app).
+Live Site: [View Live Site](https://better-life-wellness.web.app/).
 
 ## Project Description
 
-- [x] This is a Personal service provider website created with ReactJS.
-- [x] There are Header Navigations.
-- [x] There is a Checkotu page for the Cars and 3 Home page services.
-- [x] There is a Blog and about page.
-- [x] Answered some assignment questions on the Blog Page.
+- [x] This is a Personal Fitness Trainer website created with ReactJS.
+- [x] There are 6 Header Navigations.
+- [x] There is a Checkout page and 3 services at Home page.
+- [x] You can select a service and checkout.
+- [x] Answered 3 assignment questions on the Blog Page.
 - [x] There is also an about page.
 
 ## Available Scripts
