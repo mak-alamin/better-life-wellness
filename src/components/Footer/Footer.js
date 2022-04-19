@@ -7,11 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-12 item text">
             <h3>Better Life Wellness</h3>
-            <p>
-              Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus
-              ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique
-              lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
-            </p>
+            <p>Better health, better performance, better life.</p>
           </div>
         </div>
         <p className="copyright">Better Life Wellness © 2022</p>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div className="container" id="services">
-      <h2 className="mt-5 mb-3 text-center">Start With What Suits You</h2>
+      <h2 className="mt-5 mb-3 text-center">Services I Provide</h2>
       <div className="row">
         <div className="col-md-4 card">
           <img src="./images/2.jpg" className="card-img-top" alt="..." />

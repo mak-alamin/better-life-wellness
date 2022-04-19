@@ -1,0 +1,14 @@
+span.navbar-brand a {
+  text-decoration: none;
+  color: #282d32;
+  font-weight: bold;
+}
+.navbar-nav a {
+  text-decoration: none;
+  color: #252424;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.navbar-nav a.active {
+  border-bottom: 2px solid black;
+}

@@ -2,8 +2,9 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import "./Header.css";
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -20,36 +21,47 @@ const Header = () => {
       <Navbar bg="light" expand="lg" className="px-1 py-3">
         <Container>
           <Navbar.Brand>
-            <Link to="/">Better Life Wellness</Link>
+            <NavLink to="/">Better Life Wellness</NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <Link to="/" className="px-3">
+              <NavLink to="/" className="px-3" activeclassname="active">
                 Home
-              </Link>
-              <Link to="/blog" className="px-3">
+              </NavLink>
+              <NavLink to="/blog" className="px-3" activeclassname="active">
                 Blog
-              </Link>
-              <Link to="/checkout" className="px-3">
+              </NavLink>
+              <NavLink to="/checkout" className="px-3" activeclassname="active">
                 Checkout
-              </Link>
-              <Link to="/about" className="px-3">
+              </NavLink>
+              <NavLink to="/about" className="px-3" activeclassname="active">
                 About Me
-              </Link>
+              </NavLink>
 
               {user && (
-                <Link to="/profile" className="px-3">
+                <NavLink
+                  to="/profile"
+                  className="px-3"
+                  activeclassname="active"
+                >
                   My Account
-                </Link>
+                </NavLink>
               )}
 
               {user ? (
-                <a href="#" onClick={handleLogOut} className="px-3">
+                <a
+                  href="#!"
+                  onClick={handleLogOut}
+                  className="px-3"
+                  activeclassname="active"
+                >
                   Log out
                 </a>
               ) : (
-                <Link to="login">Login</Link>
+                <NavLink to="login" className="px-3" activeclassname="active">
+                  Login
+                </NavLink>
               )}
             </Nav>
           </Navbar.Collapse>

@@ -32,7 +32,9 @@ const Profile = () => {
             <p className="user-mail">
               <i className="fa fa-envelope"></i> {email}
             </p>
-            <p>( Email is {emailVerified ? "" : " not "} varified )</p>
+            <p className={`text-${emailVerified ? "success" : "danger"}`}>
+              ( Email is {emailVerified ? "" : " not "} varified )
+            </p>
           </div>
         </div>
       </div>
