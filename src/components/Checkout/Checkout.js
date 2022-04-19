@@ -59,7 +59,6 @@ const Checkout = () => {
             name="address"
             id="user_address"
             className="form-control"
-            required
           />
         </div>
 

@@ -4,6 +4,7 @@ import {
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 import auth from "../../firebase.init";
 import Loading from "../Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
@@ -23,8 +24,6 @@ const Login = () => {
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
   if (user) {
-    console.log(user);
-
     navigate(from, { replace: true });
   }
 
@@ -38,6 +37,17 @@ const Login = () => {
     const password = passwordRef.current.value;
 
     signInWithEmailAndPassword(email, password);
+  };
+
+  const resetPassword = async (e) => {
+    e.preventDefault();
+    const email = emailRef.current.value;
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast("Password reset link has been sent to your email");
+    } else {
+      toast("Please enter your email address first");
+    }
   };
 
   return (
@@ -68,7 +78,9 @@ const Login = () => {
             id="form2Example2"
             className="form-control"
           />
-          <a href="#!">Forgot password?</a>
+          <a href="#!" onClick={resetPassword}>
+            Forgot password?
+          </a>
         </div>
 
         <button type="submit" className="btn btn-primary btn-block mb-4">
@@ -82,6 +94,7 @@ const Login = () => {
             Not a member? <Link to="/register">Register</Link>
           </p>
           <SocialLogin></SocialLogin>
+          <ToastContainer></ToastContainer>
         </div>
       </form>
     </div>
