@@ -5,12 +5,13 @@ import auth from "../../firebase.init";
 const Profile = () => {
   const [user] = useAuthState(auth);
 
-  const { displayName, email } = user;
+  console.log(user);
+  const { displayName, email, photoURL } = user;
   return (
     <div className="container">
       <div className="profile-header">
         <div className="profile-img">
-          <img src="./bg.jpg" width="200" alt="Profile Image Not Found" />
+          <img src={photoURL} width="200" alt="Profile Pic Not Found" />
         </div>
         <div className="profile-nav-info">
           <h3 className="user-name">{displayName}</h3>

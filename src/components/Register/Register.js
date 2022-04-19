@@ -6,6 +6,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import Loading from "../Loading/Loading";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
   const [agree, setAgree] = useState(true);
@@ -144,29 +145,8 @@ const Register = () => {
           <p>
             Already a member? <Link to="/login">Login</Link>
           </p>
-          <p>Or,</p>
-          <button
-            type="button"
-            className="btn btn-light border btn-floating mx-1 mb-3"
-          >
-            {" "}
-            <img src="./images/google.png" alt="" width={30} className="me-3" />
-            Continue with Google
-          </button>
 
-          <button
-            type="button"
-            className="btn btn-light border btn-floating mx-1"
-          >
-            {" "}
-            <img
-              src="./images/facebook.png"
-              alt=""
-              width={30}
-              className="me-3"
-            />
-            Continue with Facebook
-          </button>
+          <SocialLogin></SocialLogin>
         </div>
       </form>
     </div>

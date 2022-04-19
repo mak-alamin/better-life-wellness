@@ -6,6 +6,7 @@ import {
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import Loading from "../Loading/Loading";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   const emailRef = useRef("");
@@ -80,29 +81,7 @@ const Login = () => {
           <p>
             Not a member? <Link to="/register">Register</Link>
           </p>
-          <p>Or,</p>
-          <button
-            type="button"
-            className="btn btn-light border btn-floating mx-1 mb-3"
-          >
-            {" "}
-            <img src="./images/google.png" alt="" width={30} className="me-3" />
-            Continue with Google
-          </button>
-
-          <button
-            type="button"
-            className="btn btn-light border btn-floating mx-1"
-          >
-            {" "}
-            <img
-              src="./images/facebook.png"
-              alt=""
-              width={30}
-              className="me-3"
-            />
-            Continue with Facebook
-          </button>
+          <SocialLogin></SocialLogin>
         </div>
       </form>
     </div>
