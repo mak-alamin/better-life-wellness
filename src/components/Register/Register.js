@@ -19,10 +19,6 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  if (user) {
-    console.log("User: ", user);
-  }
-
   const clearMessages = () => {
     setPassError("");
     setPassMatchError("");
@@ -51,7 +47,7 @@ const Register = () => {
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
 
-    navigate("/profile");
+    navigate("/");
   };
 
   return (

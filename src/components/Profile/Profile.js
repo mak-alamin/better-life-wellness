@@ -6,7 +6,7 @@ const Profile = () => {
   const [user] = useAuthState(auth);
 
   console.log(user);
-  const { displayName, email, photoURL } = user;
+  const { displayName, email, photoURL, emailVerified } = user;
   return (
     <div className="container">
       <div className="profile-header">
@@ -32,6 +32,7 @@ const Profile = () => {
             <p className="user-mail">
               <i className="fa fa-envelope"></i> {email}
             </p>
+            <p>( Email is {emailVerified ? "" : " not "} varified )</p>
           </div>
         </div>
       </div>
